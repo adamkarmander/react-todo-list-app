@@ -1,3 +1,12 @@
+body {
+  background-color: #001d3d;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
