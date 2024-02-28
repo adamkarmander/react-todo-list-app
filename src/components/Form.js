@@ -1,13 +1,9 @@
 import React from "react";
 
-function Form({ setInputText } ) {
-    const inputTextHandler = (e) => {
-        console.log(e.target.value);
-        setInputText(e.target.value);
-    };
+function Form() {
     return (
         <form>
-            <input onChange={inputTextHandler} type="text" className="todo-input" />
+            <input type="text" className="todo-input" />
             <button className="todo-button" type="submit">Add</button>
         </form>
     );
