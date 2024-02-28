@@ -13,7 +13,7 @@ function App() {
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
       </style>
       <header>
-        <h1>My Todo List {inputText}</h1>
+        <h1>My Todo List</h1>
         <Form setInputText={setInputText} />
         <TodoList />
       </header>
