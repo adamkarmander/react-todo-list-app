@@ -1,15 +1,18 @@
+import React from 'react';
 import './App.css';
+
+//Importing Components
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <head>
-        <style>
+      <style>
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
-        </style>
-      </head>
+      </style>
       <header>
         <h1>My Todo List</h1>
+        <Form />
       </header>
     </div>
   );
