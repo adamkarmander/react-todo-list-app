@@ -2,13 +2,13 @@ import React from "react";
 //Importing Components
 import Todo from './Todo';
 
-function TodoList() {
+function TodoList({ todos }) {
     return (
         <div className="todo-container">
             <ul className="todo-list">
-                <Todo />
-                <Todo />
-                <Todo />
+                {todos.map((todo) => (
+                    <Todo key={todo.id} text={todo.text} />
+                ))}
             </ul>
         </div>
     );
