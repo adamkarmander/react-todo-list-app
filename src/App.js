@@ -7,14 +7,15 @@ import TodoList from './components/TodoList';
 
 function App() {
   const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <style>
-          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
       </style>
       <header>
         <h1>My Todo List</h1>
-        <Form setInputText={setInputText} />
+        <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText} />
         <TodoList />
       </header>
     </div>
