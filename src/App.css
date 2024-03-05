@@ -10,3 +10,55 @@ h1 {
 .App {
   text-align: center;
 }
+
+.todo-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  padding: 0;
+  min-width: 20%;
+  list-style: none;
+}
+
+.todo {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  background: #ffc300;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo-buttons {
+  margin: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-btn, .trash-btn {
+  color: white;
+  padding: 0.2rem;
+  width: 65px;
+  height: 35px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete-btn {
+  background-color: #06d6a0;
+}
+
+.trash-btn {
+  background-color: #ef476f;
+}
